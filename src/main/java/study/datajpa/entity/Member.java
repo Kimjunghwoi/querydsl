@@ -1,4 +1,4 @@
-package study.querydsl.entity;
+package study.datajpa.entity;
 
 import lombok.*;
 
@@ -6,7 +6,7 @@ import javax.persistence.*;
 
 @Entity
 @Getter @Setter
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@NoArgsConstructor(access = AccessLevel.PROTECTED) // 기본생성자를 아무곳에서나 생성하지 못하게 하기위함
 @ToString(of = {"id", "username", "age"}) // toString 에 team을 넣으면 왔다갔다 하면서 무한루프 가능성..
 public class Member {
 
